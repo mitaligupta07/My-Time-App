@@ -1,0 +1,1339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ex11"
+    android:orientation="vertical"
+    tools:context=".meditation">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:fontFamily="@font/average"
+        android:textAlignment="textEnd"
+        android:textColor="#070707"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:textSize="40dp"
+        android:gravity="end"
+        android:title="Let's Mediate"
+        />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/med1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="ImageButtonClick"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:text="body scan"
+                                android:textAllCaps="true"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:paddingStart="10dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="Repeat 2 Times"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="01:00 MIN"
+                                android:textColor="#F80606"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.0">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="78dp"
+                                android:src="@drawable/med3" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.0"
+                            android:gravity="center">
+
+                            <ImageButton
+                                android:id="@+id/btn1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5.0dp"
+                                android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+                    </LinearLayout>
+                    </LinearLayout>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dp"
+                        android:background="#000000" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/med2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="ImageButtonClick"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:text="Self Compassion Session"
+                                android:textAllCaps="true"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:paddingStart="10dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="Repeat 2 Times"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="01:00 MIN"
+                                android:textColor="#F80606"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.0">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="78dp"
+                                android:src="@drawable/med" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.0"
+                            android:gravity="center">
+
+                            <ImageButton
+                                android:id="@+id/btn2"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5.0dp"
+                                android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dp"
+                        android:background="#000000" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/med3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="ImageButtonClick"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:text="Diaphragmatic breathing"
+                                android:textAllCaps="true"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:paddingStart="10dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="Repeat 2 Times"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="01:00 MIN"
+                                android:textColor="#F80606"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.0">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="78dp"
+                                android:src="@drawable/meddiaph" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.0"
+                            android:gravity="center">
+
+                            <ImageButton
+                                android:id="@+id/btn3"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5.0dp"
+                                android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dp"
+                        android:background="#000000" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/med4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="ImageButtonClick"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:text="Progressive muscle relaxation"
+                                android:textAllCaps="true"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:paddingStart="10dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="Repeat 2 Times"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="01:00 MIN"
+                                android:textColor="#F80606"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.0">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="78dp"
+                                android:src="@drawable/medprog" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.0"
+                            android:gravity="center">
+
+                            <ImageButton
+                                android:id="@+id/btn4"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5.0dp"
+                                android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dp"
+                        android:background="#000000" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/med5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="ImageButtonClick"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:text="Visualization"
+                                android:textAllCaps="true"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:paddingStart="10dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="Repeat 2 Times"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="01:00 MIN"
+                                android:textColor="#F80606"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.0">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="78dp"
+                                android:src="@drawable/medvis" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.0"
+                            android:gravity="center">
+
+                            <ImageButton
+                                android:id="@+id/btn5"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5.0dp"
+                                android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dp"
+                        android:background="#000000" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/med6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="ImageButtonClick"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:text="The blackboard technique"
+                                android:textAllCaps="true"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:paddingStart="10dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="Repeat 2 Times"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="01:00 MIN"
+                                android:textColor="#F80606"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.0">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="78dp"
+                                android:src="@drawable/medblack" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.0"
+                            android:gravity="center">
+
+                            <ImageButton
+                                android:id="@+id/btn6"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5.0dp"
+                                android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dp"
+                        android:background="#000000" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/med7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="ImageButtonClick"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:text="Walking meditation"
+                                android:textAllCaps="true"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:paddingStart="10dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="Repeat 2 Times"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="01:00 MIN"
+                                android:textColor="#F80606"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.0">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="78dp"
+                                android:src="@drawable/med2" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.0"
+                            android:gravity="center">
+
+                            <ImageButton
+                                android:id="@+id/btn7"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5.0dp"
+                                android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dp"
+                        android:background="#000000" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/med8"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="ImageButtonClick"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:text="Stillness challenge"
+                                android:textAllCaps="true"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:paddingStart="10dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="Repeat 2 Times"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="01:00 MIN"
+                                android:textColor="#F80606"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.0">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="78dp"
+                                android:src="@drawable/medstill" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.0"
+                            android:gravity="center">
+
+                            <ImageButton
+                                android:id="@+id/btn8"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5.0dp"
+                                android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dp"
+                        android:background="#000000" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/med9"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="ImageButtonClick"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:text="Breathing buddy meditation"
+                                android:textAllCaps="true"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:paddingStart="10dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="Repeat 2 Times"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="01:00 MIN"
+                                android:textColor="#F80606"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.0">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="78dp"
+                                android:src="@drawable/medbb" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.0"
+                            android:gravity="center">
+
+                            <ImageButton
+                                android:id="@+id/btn9"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5.0dp"
+                                android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dp"
+                        android:background="#000000" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/med10"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="ImageButtonClick"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:text="Minute of Mindfulness"
+                                android:textAllCaps="true"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:paddingStart="10dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="Repeat 2 Times"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="01:00 MIN"
+                                android:textColor="#F80606"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.0">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="78dp"
+                                android:src="@drawable/medmm" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.0"
+                            android:gravity="center">
+
+                            <ImageButton
+                                android:id="@+id/btn10"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5.0dp"
+                                android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dp"
+                        android:background="#000000" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/med11"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="ImageButtonClick"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:text="The Beach"
+                                android:textAllCaps="true"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:paddingStart="10dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="Repeat 2 Times"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="01:00 MIN"
+                                android:textColor="#F80606"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.0">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="78dp"
+                                android:src="@drawable/ex11" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.0"
+                            android:gravity="center">
+
+                            <ImageButton
+                                android:id="@+id/btn11"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5.0dp"
+                                android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dp"
+                        android:background="#000000" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/med12"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="ImageButtonClick"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:text="The Blank Screen"
+                                android:textAllCaps="true"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:paddingStart="10dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="Repeat 2 Times"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="01:00 MIN"
+                                android:textColor="#F80606"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.0">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="78dp"
+                                android:src="@drawable/medbls" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.0"
+                            android:gravity="center">
+
+                            <ImageButton
+                                android:id="@+id/btn12"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5.0dp"
+                                android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dp"
+                        android:background="#000000" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/med13"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="ImageButtonClick"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:text=" STOP Technique"
+                                android:textAllCaps="true"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:paddingStart="10dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="Repeat 2 Times"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="01:00 MIN"
+                                android:textColor="#F80606"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.0">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="78dp"
+                                android:src="@drawable/medstop" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.0"
+                            android:gravity="center">
+
+                            <ImageButton
+                                android:id="@+id/btn13"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5.0dp"
+                                android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dp"
+                        android:background="#000000" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/med14"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="ImageButtonClick"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:text="Forest Trail"
+                                android:textAllCaps="true"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:paddingStart="10dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="Repeat 2 Times"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="01:00 MIN"
+                                android:textColor="#F80606"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.0">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="78dp"
+                                android:src="@drawable/medforest" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.0"
+                            android:gravity="center">
+
+                            <ImageButton
+                                android:id="@+id/btn14"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5.0dp"
+                                android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dp"
+                        android:background="#000000" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/med15"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:onClick="ImageButtonClick"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:text="Gratitude meditation"
+                                android:textAllCaps="true"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+                                android:paddingStart="10dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="Repeat 2 Times"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:paddingStart="10dp"
+                                android:text="01:00 MIN"
+                                android:textColor="#F80606"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.0">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="78dp"
+                                android:src="@drawable/medgra" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.0"
+                            android:gravity="center">
+
+                            <ImageButton
+                                android:id="@+id/btn15"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5.0dp"
+                                android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dp"
+                        android:background="#000000" />
+
+                </LinearLayout>
+                
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

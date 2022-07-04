@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ex11"
+    android:orientation="vertical"
+    tools:context=".Dashboard">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:textAlignment="textEnd"
+        android:gravity="end"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="USER ACTIVITIES"
+        app:titleTextColor="#F8F7F7"
+        />
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/bg1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="347dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="monospace"
+                            android:padding="5dp"
+                            android:text="Meditation"
+                            android:textColor="#ff000000"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:padding="5dp"
+                            android:text="Above Age 16"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:padding="5dp"
+                            android:text="EVERYDAY 15 MINS"
+                            android:textColor="#F40B0B"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.0">
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/exersice_10" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/meditation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/roundborderblack"
+                    android:text="GET STARTED"
+                    android:textColor="#ECEAEA"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/bg1"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:padding="5dp"
+                                android:text="Yoga"
+                                android:textColor="#ff000000"
+                                android:textSize="30dp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="serif"
+                                android:padding="5dp"
+                                android:text="Above Age 16"
+                                android:textSize="20dp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="serif"
+                                android:padding="5dp"
+                                android:text="EVERYDAY 15 MINS"
+                                android:textColor="#F40B0B"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.0">
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ex11"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/yoga"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="GET STARTED"
+                        android:background="@drawable/roundborderblack"
+                        android:textStyle="bold"
+                        android:textColor="#E8E5E5"
+                        android:textSize="20dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/bg1"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:padding="5dp"
+                                android:text="Blogs"
+                                android:textColor="#ff000000"
+                                android:textSize="30dp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="serif"
+                                android:padding="5dp"
+                                android:text="Above Age 10"
+                                android:textSize="20dp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="serif"
+                                android:padding="5dp"
+                                android:text="EVERYDAY 15 MINS"
+                                android:textColor="#F40B0B"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.0">
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/exersice_10"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/blogs"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="GET STARTED"
+                        android:background="@drawable/roundborderblack"
+                        android:textStyle="bold"
+                        android:textColor="#F3F1F1"
+                        android:textSize="20dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/bg1"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="monospace"
+                                    android:padding="5dp"
+                                    android:text="Miscellaneous"
+                                    android:textColor="#ff000000"
+                                    android:textSize="25dp"
+                                    android:textStyle="bold"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="serif"
+                                    android:padding="5dp"
+                                    android:text="Above Age 13"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="serif"
+                                    android:padding="5dp"
+                                    android:text="EVERYDAY 15 MINS"
+                                    android:textColor="#F40B0B"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2.0">
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/exersice_10"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <Button
+                            android:id="@+id/miscellaneous"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="GET STARTED"
+                            android:background="@drawable/roundborderblack"
+                            android:textStyle="bold"
+                            android:textColor="#DFDCDC"
+                            android:textSize="20dp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+        </ScrollView>
+</LinearLayout>

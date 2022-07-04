@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ex11"
+    tools:context=".meditation1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24"
+                android:padding="15dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/average"
+            android:text="Let's Mediate"
+            android:paddingBottom="20dp"
+            android:textAllCaps="true"
+            android:textColor="#070707"
+            android:textSize="40dp"
+            android:transitionName="transition_text"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="546dp"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="391dp"
+                android:background="@drawable/med3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="404dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="142dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:background="#D8C7CD"
+                android:textAlignment="center"
+                android:foregroundGravity="center_horizontal"
+                android:text="Body Scan Meditation\n\nGet into a comfortable position. You can sit or lie down.
+\n\nClose your eyes for a deeper practice.
+\n\nStarting with your feet and toes, tune into and pay attention to any sensations you feel, like pain or discomfort.
+\n\nTake a nice deep breath in through your nose, exhaling through the mouth, releasing the uncomfortable sensation.
+
+
+"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:gravity="center_horizontal" />
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
